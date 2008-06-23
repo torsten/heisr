@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>heise online News</title>
+  <subtitle>Nachrichten nicht nur aus der Welt der Computer</subtitle>
+  <link href="http://www.heise.de/newsticker/" />
+  <link rel="self" href="http://www.heise.de/newsticker/heise-atom.xml" />
+  <updated>2008-06-23T18:02:12+02:00</updated>
+  <author>
+    <name>heise online</name>
+  </author>
+  <id>http://www.heise.de/newsticker/</id>
+
+  <entry>
+    <title>EU-Datenschutzbeauftragter: Netzfilter stellen Risiko dar</title>
+    <link href="http://www.heise.de/newsticker/EU-Datenschutzbeauftragter-Netzfilter-stellen-Risiko-dar--/meldung/109858/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109858</id>
+    <updated>2008-06-23T18:02:12+02:00</updated>
+    <summary>EU-Datenschutzbeauftragter: Netzfilter stellen Risiko dar</summary>
+  </entry>
+
+  <entry>
+    <title>Rekordübernahme von Telecom-Konzern BCE erneut in Gefahr</title>
+    <link href="http://www.heise.de/newsticker/Rekorduebernahme-von-Telecom-Konzern-BCE-erneut-in-Gefahr--/meldung/109864/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109864</id>
+    <updated>2008-06-23T17:27:08+02:00</updated>
+    <summary>Rekordübernahme von Telecom-Konzern BCE erneut in Gefahr</summary>
+  </entry>
+
+  <entry>
+    <title>Japanisches Joint Venture für Treiber-ICs</title>
+    <link href="http://www.heise.de/newsticker/Japanisches-Joint-Venture-fuer-Treiber-ICs--/meldung/109861/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109861</id>
+    <updated>2008-06-23T17:12:10+02:00</updated>
+    <summary>Japanisches Joint Venture für Treiber-ICs</summary>
+  </entry>
+
+  <entry>
+    <title>Linux-Kernel-Entwickler sprechen sich gegen proprietäre Treiber aus</title>
+    <link href="http://www.heise.de/newsticker/Linux-Kernel-Entwickler-sprechen-sich-gegen-proprietaere-Treiber-aus--/meldung/109854/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109854</id>
+    <updated>2008-06-23T17:07:10+02:00</updated>
+    <summary>Linux-Kernel-Entwickler sprechen sich gegen proprietäre Treiber aus</summary>
+  </entry>
+
+  <entry>
+    <title>Mobilkom Austria verklagt Mobilfunkgegner Oberfeld</title>
+    <link href="http://www.heise.de/newsticker/Mobilkom-Austria-verklagt-Mobilfunkgegner-Oberfeld--/meldung/109859/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109859</id>
+    <updated>2008-06-23T17:02:15+02:00</updated>
+    <summary>Mobilkom Austria verklagt Mobilfunkgegner Oberfeld</summary>
+  </entry>
+
+  <entry>
+    <title>Netbook für 399 Euro bei Aldi Süd</title>
+    <link href="http://www.heise.de/newsticker/Netbook-fuer-399-Euro-bei-Aldi-Sued--/meldung/109857/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109857</id>
+    <updated>2008-06-23T18:38:07+02:00</updated>
+    <summary>Netbook für 399 Euro bei Aldi Süd</summary>
+  </entry>
+
+  <entry>
+    <title>Tru64-Dateisystem für Linux</title>
+    <link href="http://www.heise.de/newsticker/Tru64-Dateisystem-fuer-Linux--/meldung/109843/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109843</id>
+    <updated>2008-06-23T16:00:57+02:00</updated>
+    <summary>Tru64-Dateisystem für Linux</summary>
+  </entry>
+
+  <entry>
+    <title>Datenschützer lobt neuen Entwurf zur Regulierung von Auskunfteien</title>
+    <link href="http://www.heise.de/newsticker/Datenschuetzer-lobt-neuen-Entwurf-zur-Regulierung-von-Auskunfteien--/meldung/109855/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109855</id>
+    <updated>2008-06-23T15:51:11+02:00</updated>
+    <summary>Datenschützer lobt neuen Entwurf zur Regulierung von Auskunfteien</summary>
+  </entry>
+
+  <entry>
+    <title>Bitkom: Vier von fünf deutschen Firmen besitzen Web-Präsenz</title>
+    <link href="http://www.heise.de/newsticker/Bitkom-Vier-von-fuenf-deutschen-Firmen-besitzen-Web-Praesenz--/meldung/109849/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109849</id>
+    <updated>2008-06-23T15:43:45+02:00</updated>
+    <summary>Bitkom: Vier von fünf deutschen Firmen besitzen Web-Präsenz</summary>
+  </entry>
+
+  <entry>
+    <title>Uni Karlsruhe befragt Online-Shopper zu Bezahlsystemen</title>
+    <link href="http://www.heise.de/newsticker/Uni-Karlsruhe-befragt-Online-Shopper-zu-Bezahlsystemen--/meldung/109850/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109850</id>
+    <updated>2008-06-23T15:17:18+02:00</updated>
+    <summary>Uni Karlsruhe befragt Online-Shopper zu Bezahlsystemen</summary>
+  </entry>
+
+  <entry>
+    <title>Analysten: Weltweit mehr als eine Milliarde PCs</title>
+    <link href="http://www.heise.de/newsticker/Analysten-Weltweit-mehr-als-eine-Milliarde-PCs--/meldung/109847/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109847</id>
+    <updated>2008-06-23T17:23:13+02:00</updated>
+    <summary>Analysten: Weltweit mehr als eine Milliarde PCs</summary>
+  </entry>
+
+  <entry>
+    <title>GPLv3 auf dem Vormarsch</title>
+    <link href="http://www.heise.de/newsticker/GPLv3-auf-dem-Vormarsch--/meldung/109844/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109844</id>
+    <updated>2008-06-23T15:05:59+02:00</updated>
+    <summary>GPLv3 auf dem Vormarsch</summary>
+  </entry>
+
+  <entry>
+    <title>Internet-Recherche: Journalisten schmoren im eigenen Saft</title>
+    <link href="http://www.heise.de/newsticker/Internet-Recherche-Journalisten-schmoren-im-eigenen-Saft--/meldung/109852/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109852</id>
+    <updated>2008-06-23T15:01:09+02:00</updated>
+    <summary>Internet-Recherche: Journalisten schmoren im eigenen Saft</summary>
+  </entry>
+
+  <entry>
+    <title>ZVEI: Halbleiterbranche wächst nicht so stark wie erwartet</title>
+    <link href="http://www.heise.de/newsticker/ZVEI-Halbleiterbranche-waechst-nicht-so-stark-wie-erwartet--/meldung/109848/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109848</id>
+    <updated>2008-06-23T14:28:04+02:00</updated>
+    <summary>ZVEI: Halbleiterbranche wächst nicht so stark wie erwartet</summary>
+  </entry>
+
+  <entry>
+    <title>Österreicher haftet nicht für Filesharing seiner Tochter</title>
+    <link href="http://www.heise.de/newsticker/Oesterreicher-haftet-nicht-fuer-Filesharing-seiner-Tochter--/meldung/109846/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109846</id>
+    <updated>2008-06-23T14:11:54+02:00</updated>
+    <summary>Österreicher haftet nicht für Filesharing seiner Tochter</summary>
+  </entry>
+
+  <entry>
+    <title>China Mobile will 2010 4G-Mobilfunk starten</title>
+    <link href="http://www.heise.de/newsticker/China-Mobile-will-2010-4G-Mobilfunk-starten--/meldung/109842/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109842</id>
+    <updated>2008-06-23T15:17:48+02:00</updated>
+    <summary>China Mobile will 2010 4G-Mobilfunk starten</summary>
+  </entry>
+
+  <entry>
+    <title>O2 bringt HSDPA-Flatrate für 25 Euro</title>
+    <link href="http://www.heise.de/newsticker/O2-bringt-HSDPA-Flatrate-fuer-25-Euro--/meldung/109841/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109841</id>
+    <updated>2008-06-23T14:43:52+02:00</updated>
+    <summary>O2 bringt HSDPA-Flatrate für 25 Euro</summary>
+  </entry>
+
+  <entry>
+    <title>Studie: Jeder dritte Achtjährige telefoniert mobil</title>
+    <link href="http://www.heise.de/newsticker/Studie-Jeder-dritte-Achtjaehrige-telefoniert-mobil--/meldung/109836/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109836</id>
+    <updated>2008-06-23T13:51:48+02:00</updated>
+    <summary>Studie: Jeder dritte Achtjährige telefoniert mobil</summary>
+  </entry>
+
+  <entry>
+    <title>Millionenfacher Passwortklau durch Würmer</title>
+    <link href="http://www.heise.de/newsticker/Millionenfacher-Passwortklau-durch-Wuermer--/meldung/109833/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109833</id>
+    <updated>2008-06-23T15:29:46+02:00</updated>
+    <summary>Millionenfacher Passwortklau durch Würmer</summary>
+  </entry>
+
+  <entry>
+    <title>Fernsehmagazin: Datenpanne bei Einwohnermeldeämtern (Update)</title>
+    <link href="http://www.heise.de/newsticker/Fernsehmagazin-Datenpanne-bei-Einwohnermeldeaemtern-Update--/meldung/109835/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109835</id>
+    <updated>2008-06-23T16:42:25+02:00</updated>
+    <summary>Fernsehmagazin: Datenpanne bei Einwohnermeldeämtern (Update)</summary>
+  </entry>
+
+  <entry>
+    <title>Neue Überwachungsvorwürfe gegen Online-Werbesystem NebuAd</title>
+    <link href="http://www.heise.de/newsticker/Neue-Ueberwachungsvorwuerfe-gegen-Online-Werbesystem-NebuAd--/meldung/109824/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109824</id>
+    <updated>2008-06-23T13:14:43+02:00</updated>
+    <summary>Neue Überwachungsvorwürfe gegen Online-Werbesystem NebuAd</summary>
+  </entry>
+
+  <entry>
+    <title>Microsoft forscht an kostengünstigem Multitouch-Display</title>
+    <link href="http://www.heise.de/newsticker/Microsoft-forscht-an-kostenguenstigem-Multitouch-Display--/meldung/109834/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109834</id>
+    <updated>2008-06-23T13:18:04+02:00</updated>
+    <summary>Microsoft forscht an kostengünstigem Multitouch-Display</summary>
+  </entry>
+
+  <entry>
+    <title>Studie: Einzelhandel wird jährlich um 4 Milliarden Euro betrogen</title>
+    <link href="http://www.heise.de/newsticker/Studie-Einzelhandel-wird-jaehrlich-um-4-Milliarden-Euro-betrogen--/meldung/109831/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109831</id>
+    <updated>2008-06-23T12:04:40+02:00</updated>
+    <summary>Studie: Einzelhandel wird jährlich um 4 Milliarden Euro betrogen</summary>
+  </entry>
+
+  <entry>
+    <title>NetBSD streicht Werbeklausel aus der Lizenz</title>
+    <link href="http://www.heise.de/newsticker/NetBSD-streicht-Werbeklausel-aus-der-Lizenz--/meldung/109823/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109823</id>
+    <updated>2008-06-23T12:07:17+02:00</updated>
+    <summary>NetBSD streicht Werbeklausel aus der Lizenz</summary>
+  </entry>
+
+  <entry>
+    <title>Französische EU-Präsidentschaft setzt Zukunft des Internet auf die Agenda</title>
+    <link href="http://www.heise.de/newsticker/Franzoesische-EU-Praesidentschaft-setzt-Zukunft-des-Internet-auf-die-Agenda--/meldung/109830/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109830</id>
+    <updated>2008-06-23T11:54:39+02:00</updated>
+    <summary>Französische EU-Präsidentschaft setzt Zukunft des Internet auf die Agenda</summary>
+  </entry>
+
+  <entry>
+    <title>Bericht: Verzögerungen bei der Entwicklung von Android-Handys</title>
+    <link href="http://www.heise.de/newsticker/Bericht-Verzoegerungen-bei-der-Entwicklung-von-Android-Handys--/meldung/109827/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109827</id>
+    <updated>2008-06-23T13:41:34+02:00</updated>
+    <summary>Bericht: Verzögerungen bei der Entwicklung von Android-Handys</summary>
+  </entry>
+
+  <entry>
+    <title>Medikamente von Ziegen, Kühen und Hühnern</title>
+    <link href="http://www.heise.de/newsticker/Medikamente-von-Ziegen-Kuehen-und-Huehnern--/meldung/109826/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109826</id>
+    <updated>2008-06-23T11:14:04+02:00</updated>
+    <summary>Medikamente von Ziegen, Kühen und Hühnern</summary>
+  </entry>
+
+  <entry>
+    <title>ZDF und "Die Zeit" kooperieren im Internet</title>
+    <link href="http://www.heise.de/newsticker/ZDF-und-Die-Zeit-kooperieren-im-Internet--/meldung/109825/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109825</id>
+    <updated>2008-06-23T11:10:42+02:00</updated>
+    <summary>ZDF und "Die Zeit" kooperieren im Internet</summary>
+  </entry>
+
+  <entry>
+    <title>Hochschulen unter dem Einfluss von Unternehmen</title>
+    <link href="http://www.heise.de/newsticker/Hochschulen-unter-dem-Einfluss-von-Unternehmen--/meldung/109821/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109821</id>
+    <updated>2008-06-23T11:20:45+02:00</updated>
+    <summary>Hochschulen unter dem Einfluss von Unternehmen</summary>
+  </entry>
+
+  <entry>
+    <title>Nokia kauft "Location-Tracking"-Dienst Plazes</title>
+    <link href="http://www.heise.de/newsticker/Nokia-kauft-Location-Tracking-Dienst-Plazes--/meldung/109808/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109808</id>
+    <updated>2008-06-23T10:45:52+02:00</updated>
+    <summary>Nokia kauft "Location-Tracking"-Dienst Plazes</summary>
+  </entry>
+
+  <entry>
+    <title>Godot lässt auf sich warten: Wann kommen die neuen Top Level Domains?</title>
+    <link href="http://www.heise.de/newsticker/Godot-laesst-auf-sich-warten-Wann-kommen-die-neuen-Top-Level-Domains--/meldung/109807/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109807</id>
+    <updated>2008-06-23T10:10:08+02:00</updated>
+    <summary>Godot lässt auf sich warten: Wann kommen die neuen Top Level Domains?</summary>
+  </entry>
+
+  <entry>
+    <title>E-Plus nimmt sich Google zum Vorbild</title>
+    <link href="http://www.heise.de/newsticker/E-Plus-nimmt-sich-Google-zum-Vorbild--/meldung/109806/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109806</id>
+    <updated>2008-06-23T10:35:25+02:00</updated>
+    <summary>E-Plus nimmt sich Google zum Vorbild</summary>
+  </entry>
+
+  <entry>
+    <title>Microsoft behält Yahoo im Auge</title>
+    <link href="http://www.heise.de/newsticker/Microsoft-behaelt-Yahoo-im-Auge--/meldung/109805/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109805</id>
+    <updated>2008-06-23T09:40:30+02:00</updated>
+    <summary>Microsoft behält Yahoo im Auge</summary>
+  </entry>
+
+  <entry>
+    <title>Die Internet-Verwaltung streitet über Datenschutz für Domain-Inhaber</title>
+    <link href="http://www.heise.de/newsticker/Die-Internet-Verwaltung-streitet-ueber-Datenschutz-fuer-Domain-Inhaber--/meldung/109804/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109804</id>
+    <updated>2008-06-23T10:02:20+02:00</updated>
+    <summary>Die Internet-Verwaltung streitet über Datenschutz für Domain-Inhaber</summary>
+  </entry>
+
+  <entry>
+    <title>Heise SSL-Check mit erweiterter Erkennung</title>
+    <link href="http://www.heise.de/newsticker/Heise-SSL-Check-mit-erweiterter-Erkennung--/meldung/109802/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109802</id>
+    <updated>2008-06-23T10:58:56+02:00</updated>
+    <summary>Heise SSL-Check mit erweiterter Erkennung</summary>
+  </entry>
+
+  <entry>
+    <title>c't special "Digitale Fotografie" jetzt im Handel</title>
+    <link href="http://www.heise.de/newsticker/c-t-special-Digitale-Fotografie-jetzt-im-Handel--/meldung/109748/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109748</id>
+    <updated>2008-06-22T19:02:20+02:00</updated>
+    <summary>c't special "Digitale Fotografie" jetzt im Handel</summary>
+  </entry>
+
+  <entry>
+    <title>Mailserver Mercury überarbeitet</title>
+    <link href="http://www.heise.de/newsticker/Mailserver-Mercury-ueberarbeitet--/meldung/109801/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109801</id>
+    <updated>2008-06-22T17:50:39+02:00</updated>
+    <summary>Mailserver Mercury überarbeitet</summary>
+  </entry>
+
+  <entry>
+    <title>Bericht: Landgericht Kiel eröffnet neues Verfahren gegen Mobilcom-Gründer Gerhard Schmid</title>
+    <link href="http://www.heise.de/newsticker/Bericht-Landgericht-Kiel-eroeffnet-neues-Verfahren-gegen-Mobilcom-Gruender-Gerhard-Schmid--/meldung/109800/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109800</id>
+    <updated>2008-06-22T16:30:29+02:00</updated>
+    <summary>Bericht: Landgericht Kiel eröffnet neues Verfahren gegen Mobilcom-Gründer Gerhard Schmid</summary>
+  </entry>
+
+  <entry>
+    <title>Bitkom: Vier von fünf deutschen Unternehmen präsentieren sich im Internet</title>
+    <link href="http://www.heise.de/newsticker/Bitkom-Vier-von-fuenf-deutschen-Unternehmen-praesentieren-sich-im-Internet--/meldung/109799/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109799</id>
+    <updated>2008-06-22T14:30:00+02:00</updated>
+    <summary>Bitkom: Vier von fünf deutschen Unternehmen präsentieren sich im Internet</summary>
+  </entry>
+
+  <entry>
+    <title>Google Trends liefert Zugriffszahlen für Domains</title>
+    <link href="http://www.heise.de/newsticker/Google-Trends-liefert-Zugriffszahlen-fuer-Domains--/meldung/109798/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109798</id>
+    <updated>2008-06-22T14:03:31+02:00</updated>
+    <summary>Google Trends liefert Zugriffszahlen für Domains</summary>
+  </entry>
+
+  <entry>
+    <title>iPhone und iPod Touch als Universalfernbedienung</title>
+    <link href="http://www.heise.de/newsticker/iPhone-und-iPod-Touch-als-Universalfernbedienung--/meldung/109797/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109797</id>
+    <updated>2008-06-22T12:49:33+02:00</updated>
+    <summary>iPhone und iPod Touch als Universalfernbedienung</summary>
+  </entry>
+
+  <entry>
+    <title>Europäische Internet Society gegen Bestrafung von Piraten</title>
+    <link href="http://www.heise.de/newsticker/Europaeische-Internet-Society-gegen-Bestrafung-von-Piraten--/meldung/109795/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109795</id>
+    <updated>2008-06-22T12:15:31+02:00</updated>
+    <summary>Europäische Internet Society gegen Bestrafung von Piraten</summary>
+  </entry>
+
+  <entry>
+    <title>Neues iPhone auch bei Gravis</title>
+    <link href="http://www.heise.de/newsticker/Neues-iPhone-auch-bei-Gravis--/meldung/109794/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109794</id>
+    <updated>2008-06-23T09:37:36+02:00</updated>
+    <summary>Neues iPhone auch bei Gravis</summary>
+  </entry>
+
+  <entry>
+    <title>HD-Camcorder mit Lächelerkennung</title>
+    <link href="http://www.heise.de/newsticker/HD-Camcorder-mit-Laechelerkennung--/meldung/109793/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109793</id>
+    <updated>2008-06-22T11:05:35+02:00</updated>
+    <summary>HD-Camcorder mit Lächelerkennung</summary>
+  </entry>
+
+  <entry>
+    <title>Atari verlangt Löschung negativer Kritiken am Spiel Alone in the Dark</title>
+    <link href="http://www.heise.de/newsticker/Atari-verlangt-Loeschung-negativer-Kritiken-am-Spiel-Alone-in-the-Dark--/meldung/109792/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109792</id>
+    <updated>2008-06-22T12:46:40+02:00</updated>
+    <summary>Atari verlangt Löschung negativer Kritiken am Spiel Alone in the Dark</summary>
+  </entry>
+
+  <entry>
+    <title>Was war. Was wird.</title>
+    <link href="http://www.heise.de/newsticker/Was-war-Was-wird--/meldung/109791/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109791</id>
+    <updated>2008-06-22T00:07:20+02:00</updated>
+    <summary>Was war. Was wird.</summary>
+  </entry>
+
+  <entry>
+    <title>Stress kann tödlich sein</title>
+    <link href="http://www.heise.de/newsticker/Stress-kann-toedlich-sein--/meldung/109790/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109790</id>
+    <updated>2008-06-21T17:43:10+02:00</updated>
+    <summary>Stress kann tödlich sein</summary>
+  </entry>
+
+  <entry>
+    <title>EU will Stromverschwendung durch Stand-by-Betrieb verbieten</title>
+    <link href="http://www.heise.de/newsticker/EU-will-Stromverschwendung-durch-Stand-by-Betrieb-verbieten--/meldung/109789/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109789</id>
+    <updated>2008-06-21T17:13:41+02:00</updated>
+    <summary>EU will Stromverschwendung durch Stand-by-Betrieb verbieten</summary>
+  </entry>
+
+  <entry>
+    <title>Fernsehmarkt weiter im Aufwärtstrend</title>
+    <link href="http://www.heise.de/newsticker/Fernsehmarkt-weiter-im-Aufwaertstrend--/meldung/109788/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109788</id>
+    <updated>2008-06-23T09:34:46+02:00</updated>
+    <summary>Fernsehmarkt weiter im Aufwärtstrend</summary>
+  </entry>
+
+  <entry>
+    <title>Intel kauft Wafer für Solarzellen</title>
+    <link href="http://www.heise.de/newsticker/Intel-kauft-Wafer-fuer-Solarzellen--/meldung/109787/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109787</id>
+    <updated>2008-06-21T15:26:21+02:00</updated>
+    <summary>Intel kauft Wafer für Solarzellen</summary>
+  </entry>
+
+  <entry>
+    <title>Niederlage für Microsoft im Patentstreit mit Alcatel-Lucent</title>
+    <link href="http://www.heise.de/newsticker/Niederlage-fuer-Microsoft-im-Patentstreit-mit-Alcatel-Lucent--/meldung/109786/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109786</id>
+    <updated>2008-06-23T09:34:36+02:00</updated>
+    <summary>Niederlage für Microsoft im Patentstreit mit Alcatel-Lucent</summary>
+  </entry>
+
+  <entry>
+    <title>Dänemarks Regulierer halten Roaming für überteuert</title>
+    <link href="http://www.heise.de/newsticker/Daenemarks-Regulierer-halten-Roaming-fuer-ueberteuert--/meldung/109784/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109784</id>
+    <updated>2008-06-21T15:31:14+02:00</updated>
+    <summary>Dänemarks Regulierer halten Roaming für überteuert</summary>
+  </entry>
+
+  <entry>
+    <title>Nachschlag für Microsofts SQL Server 2008</title>
+    <link href="http://www.heise.de/newsticker/Nachschlag-fuer-Microsofts-SQL-Server-2008--/meldung/109782/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109782</id>
+    <updated>2008-06-23T09:34:24+02:00</updated>
+    <summary>Nachschlag für Microsofts SQL Server 2008</summary>
+  </entry>
+
+  <entry>
+    <title>Fragwürdige Abhöraktion im Büro des Saarländischen SPD-Chefs</title>
+    <link href="http://www.heise.de/newsticker/Fragwuerdige-Abhoeraktion-im-Buero-des-Saarlaendischen-SPD-Chefs--/meldung/109781/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109781</id>
+    <updated>2008-06-21T12:31:00+02:00</updated>
+    <summary>Fragwürdige Abhöraktion im Büro des Saarländischen SPD-Chefs</summary>
+  </entry>
+
+  <entry>
+    <title>US-Parlament billigt Persil-Gesetz für Telefonabhörer</title>
+    <link href="http://www.heise.de/newsticker/US-Parlament-billigt-Persil-Gesetz-fuer-Telefonabhoerer--/meldung/109778/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109778</id>
+    <updated>2008-06-23T12:17:38+02:00</updated>
+    <summary>US-Parlament billigt Persil-Gesetz für Telefonabhörer</summary>
+  </entry>
+
+  <entry>
+    <title>Ruby-Entwickler beheben kritische Fehler</title>
+    <link href="http://www.heise.de/newsticker/Ruby-Entwickler-beheben-kritische-Fehler--/meldung/109779/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109779</id>
+    <updated>2008-06-22T23:36:52+02:00</updated>
+    <summary>Ruby-Entwickler beheben kritische Fehler</summary>
+  </entry>
+
+  <entry>
+    <title>Schweizer Rechtskommission weist Gesetz zur Online-Überwachung zurück</title>
+    <link href="http://www.heise.de/newsticker/Schweizer-Rechtskommission-weist-Gesetz-zur-Online-Ueberwachung-zurueck--/meldung/109780/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109780</id>
+    <updated>2008-06-21T11:54:16+02:00</updated>
+    <summary>Schweizer Rechtskommission weist Gesetz zur Online-Überwachung zurück</summary>
+  </entry>
+
+  <entry>
+    <title>Vor 60 Jahren: Das "Baby" rechnet</title>
+    <link href="http://www.heise.de/newsticker/Vor-60-Jahren-Das-Baby-rechnet--/meldung/109764/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109764</id>
+    <updated>2008-06-23T08:34:33+02:00</updated>
+    <summary>Vor 60 Jahren: Das "Baby" rechnet</summary>
+  </entry>
+
+  <entry>
+    <title>IBMs AS/400 wird 20</title>
+    <link href="http://www.heise.de/newsticker/IBMs-AS-400-wird-20--/meldung/109757/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109757</id>
+    <updated>2008-06-23T15:57:29+02:00</updated>
+    <summary>IBMs AS/400 wird 20</summary>
+  </entry>
+
+  <entry>
+    <title>Red Hat Summit: Anpassungen bei der Pflegestrategie und Zukunft von RHEL</title>
+    <link href="http://www.heise.de/newsticker/Red-Hat-Summit-Anpassungen-bei-der-Pflegestrategie-und-Zukunft-von-RHEL--/meldung/109765/from/atom10" />
+    <id>http://www.heise.de/newsticker/meldung/109765</id>
+    <updated>2008-06-23T09:36:41+02:00</updated>
+    <summary>Red Hat Summit: Anpassungen bei der Pflegestrategie und Zukunft von RHEL</summary>
+  </entry>
+
+</feed>

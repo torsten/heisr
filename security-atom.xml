@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>heise Security News</title>
+  <subtitle>Nachrichten zur Computer-Sicherheit</subtitle>
+  <link href="http://www.heise.de/security/news/" />
+  <link rel="self" href="http://www.heise.de/security/news/news-atom.xml" />
+  <updated>2008-06-23T15:29:46+02:00</updated>
+  <author>
+    <name>heise online</name>
+  </author>
+  <id>http://www.heise.de/security/news/</id>
+
+  <entry>
+    <title>Millionenfacher Passwortklau durch Würmer</title>
+    <link href="http://www.heise.de/security/news/meldung/109833/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109833</id>
+    <updated>2008-06-23T15:29:46+02:00</updated>
+    <summary>Die letzte Version des Malicious Software Removal Tools entdeckt neuerdings spezielle Schädlinge, die es auf Zugangsdaten zu Online-Spielen abgesehen haben. Sie wurde auf Anhieb auf über einer Million Rechnern fündig.</summary>
+  </entry>
+
+  <entry>
+    <title>Heise SSL-Check mit erweiterter Erkennung</title>
+    <link href="http://www.heise.de/security/news/meldung/109802/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109802</id>
+    <updated>2008-06-23T10:58:56+02:00</updated>
+    <summary>Der vor zwei Wochen vorgestellte Test auf schwache SSL-Zertifikate erkennt nun fast alle  schwachen Schlüssel. Die bisherige Version war auf Standardhardware und -optionen beschränkt.</summary>
+  </entry>
+
+  <entry>
+    <title>Ruby-Entwickler beheben kritische Fehler</title>
+    <link href="http://www.heise.de/security/news/meldung/109779/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109779</id>
+    <updated>2008-06-22T23:36:52+02:00</updated>
+    <summary>Im schlimmsten Fall können Angreifer beliebigen Code einschleusen und ausführen.</summary>
+  </entry>
+
+  <entry>
+    <title>Der Patch patcht nicht</title>
+    <link href="http://www.heise.de/security/news/meldung/109749/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109749</id>
+    <updated>2008-06-20T15:44:31+02:00</updated>
+    <summary>Microsoft hat eine neue Version des Patches zum Schließen des Bluetooth-Sicherheitslochs in Windows XP SP2 und SP3 herausgegeben, da die erste Version die Lücke offen ließ.</summary>
+  </entry>
+
+  <entry>
+    <title>Sicherheits-Live-System BackTrack in Version 3 erschienen</title>
+    <link href="http://www.heise.de/security/news/meldung/109746/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109746</id>
+    <updated>2008-06-20T13:52:25+02:00</updated>
+    <summary>BackTrack bietet zahlreiche Tools zum Testen der Sicherheit von Systemen. Dazugekommen ist unter anderem das Tool wessid-ng, das das Knacken von WEP-Keys in WLANs erheblich vereinfachen soll.</summary>
+  </entry>
+
+  <entry>
+    <title>Apple entschärft "Safari Carpet Bomb"</title>
+    <link href="http://www.heise.de/security/news/meldung/109739/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109739</id>
+    <updated>2008-06-20T10:41:26+02:00</updated>
+    <summary>Apple hat ein Update für die Windows-Version von Safari veröffentlicht, das noch drei weitere Sicherheitslücken beseitigt.</summary>
+  </entry>
+
+  <entry>
+    <title>Kevin Mitnick sieht Social Engineering weiter als größtes Sicherheitsproblem</title>
+    <link href="http://www.heise.de/security/news/meldung/109738/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109738</id>
+    <updated>2008-06-20T10:16:20+02:00</updated>
+    <summary>Trotz immer mehr Software-Lücken bleibe der Mensch die größte Schwachstelle in der IT-Security, meint die Hacker-Legende.</summary>
+  </entry>
+
+  <entry>
+    <title>Root-Exploit für Mac OS X</title>
+    <link href="http://www.heise.de/security/news/meldung/109735/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109735</id>
+    <updated>2008-06-20T10:11:14+02:00</updated>
+    <summary>Ursache des Problems ist der ARDAgent (Apple Remote Desktop), der beliebige Skripte mit Root-Rechten aufruft, egal als was der jeweilige Anwender angemeldet ist. Erste Demonstrationen zeigen, wie sich damit eine Backdoor platzieren lässt.</summary>
+  </entry>
+
+  <entry>
+    <title>Gericht: Keine VoIP-Überwachung per Trojaner</title>
+    <link href="http://www.heise.de/security/news/meldung/109704/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109704</id>
+    <updated>2008-06-20T08:16:56+02:00</updated>
+    <summary>Ermittler dürfen im Rahmen einer zulässigen Telekommunikationsüberwachung nicht versuchen, am Rechner des Betroffenen mittels Trojaner Nachrichten abzufangen, entschied das Landgericht Hamburg.</summary>
+  </entry>
+
+  <entry>
+    <title>VeriSigns Titan-Projekt soll für mehr Sicherheit sorgen</title>
+    <link href="http://www.heise.de/security/news/meldung/109700/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109700</id>
+    <updated>2008-06-19T15:58:40+02:00</updated>
+    <summary>Kurz vor dem ICANN-Treffen in Paris wirbt DNS-Rootserver-Betreiber VeriSign für seine Sicherheitsoffensive unter dem Projektnamen Titan.</summary>
+  </entry>
+
+  <entry>
+    <title>Sicherheits-Updates von Cisco</title>
+    <link href="http://www.heise.de/security/news/meldung/109685/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109685</id>
+    <updated>2008-06-19T11:51:18+02:00</updated>
+    <summary>Jumbo-Ethernet-Frames bringen Ciscos Intrusion Prevention System (IPS) aus dem Tritt. Durch eine Schwachstelle im Cisco VPN Client kann ein lokaler Anwender eigenen Code mit Kernelrechten ausführen.</summary>
+  </entry>
+
+  <entry>
+    <title>Erste kritische Sicherheitslücke in Firefox 3</title>
+    <link href="http://www.heise.de/security/news/meldung/109676/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109676</id>
+    <updated>2008-06-19T10:36:51+02:00</updated>
+    <summary>Ein Angreifer soll mittels einer präparierten Webseite Schadcode in einen PC schleusen und mit den Rechten des Nutzers starten können. Die Lücke soll auch Firefox 2 betreffen.</summary>
+  </entry>
+
+  <entry>
+    <title>Hackerangriff auf Kaffeemaschine möglich</title>
+    <link href="http://www.heise.de/security/news/meldung/109625/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109625</id>
+    <updated>2008-06-18T12:18:39+02:00</updated>
+    <summary>Laut einem australischen Sicherheitsspezialisten weist das Internet Connection Kit des Kaffeemaschinenherstellers Jura Sicherheitslücken auf, mit denen Hacker anderen Leuten den Kaffee versauen können.</summary>
+  </entry>
+
+  <entry>
+    <title>Cross-Site-Scripting-Lücke in CMS Contenido geschlossen</title>
+    <link href="http://www.heise.de/security/news/meldung/109622/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109622</id>
+    <updated>2008-06-18T11:19:12+02:00</updated>
+    <summary>Die Entwickler des Open-Source Content-Management-Systems empfehlen, auf die Versionen 4.6.24 oder 4.8.6 zu wechseln.</summary>
+  </entry>
+
+  <entry>
+    <title>Microsoft-Patch behebt Patch-Blockade</title>
+    <link href="http://www.heise.de/security/news/meldung/109611/from/atom10" />
+    <id>http://www.heise.de/security/news/meldung/109611</id>
+    <updated>2008-06-18T10:44:50+02:00</updated>
+    <summary>Mit dem Update für den System Center Configuration Manager 2007 (SSCM) soll das Verteilen von Patches an Clients in Unternehmensnetzen wieder funktionieren. Ursache der Blockade war ein fehlerhafter Patch vom vergangenen Patchday.</summary>
+  </entry>
+
+</feed>

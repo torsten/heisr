@@ -1,10 +1,15 @@
-%w*ubygems camping*.each{|_|require _}
+%w*ubygems camping builder*.each{|_|require _}
 
 
 Camping.goes :HeiseRSS
 
 
 module HeiseRSS
+
+  FEEDS = %w#
+    http://www.heise.de/security/news/news-atom.xml
+    http://www.heise.de/newsticker/heise-atom.xml
+  #
 
   def r500(k,m,x)
     env = @env
@@ -73,6 +78,64 @@ module HeiseRSS::Views
   end
   
   def _atom
+    atom = Builder::XmlMarkup.new(:indent => 2)
+    atom.instruct!
+    
+    
+    atom.feed :xmlns => 'http://www.w3.org/2005/Atom' do
+      atom.title Stunts::TITLE
+      
+      atom.author do
+        atom.name Stunts::AUTHOR
+      end
+      atom.rights "Copyright #{Time.now.year} #{Stunts::AUTHOR}"
+      
+      atom.link :rel => 'alternate', :type => 'text/html',
+        :href => Stunts::BASE_URL
+      
+      atom.link :rel => 'self', :type => 'application/atom+xml',
+        :href => "#{Stunts::BASE_URL}posts.atom"
+      
+      atom.generator 'Stunts', :version => Stunts::RELEASE.gsub(%r{.+/}, '')
+      
+      atom.id "#{Stunts::BASE_URL}posts.atom"
+      
+      atom.updated(
+        if not @posts.nil? and @posts.any?
+          @posts.first[:created_at].xmlschema
+        else
+          Time.now.utc.xmlschema
+        end
+      )
+      
+      (@posts or []).each do |post|
+        
+        content = if post[:text] =~ /^\s*<p>/m
+          post[:text]
+        else
+          flowztext(post[:text])
+        end
+        
+        unique_link = "#{Stunts::BASE_URL}#{post[:_id]}"
+        
+        
+        atom.entry do
+          atom.id unique_link
+          atom.updated post[:created_at].xmlschema
+          
+          atom.link :rel => 'alternate', :type => 'text/html',
+            :href => unique_link
+          
+          atom.title post[:title]
+          
+          atom.content content, :type => 'html'
+        end
+        
+      end
+
+    end
+
+    atom.target!
     
   end
     
@@ -81,7 +144,3 @@ end
 
 module HeiseRSS::Helpers
 end
-
-
-# def HeiseRSS.create
-# end
