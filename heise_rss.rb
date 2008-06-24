@@ -13,8 +13,8 @@ module HeiseRSS
   # #
 
   FEEDS = %w#
-    newsticker-atom.xml
     security-atom.xml
+    newsticker-atom.xml
   #
 
   
@@ -98,6 +98,9 @@ module HeiseRSS::Controllers
       # end.
       # And now make a nice array for the view
       map do |entry|
+        puts entry[1][:link]
+        
+        entry[1][:content] = open(entry[1][:link]).read
         entry[1]
       end
       
@@ -135,7 +138,7 @@ module HeiseRSS::Views
     atom.instruct!
     
     
-    atom.feed :xmlns => 'http://www.w3.org/2005/Atom' do
+    atom.fed :xmlns => 'http://www.w3.org/2005/Atom' do
       atom.title "heise online News (++)"
       
       atom.link :href => "http://www.heise.de/"
