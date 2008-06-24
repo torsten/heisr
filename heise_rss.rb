@@ -1,4 +1,5 @@
-%w*ubygems camping builder*.each{|_|require _}
+%w.time rexml/document ubygems camping builder hpricot open-uri..
+each{|_|require _}
 
 
 Camping.goes :HeiseRSS
@@ -6,10 +7,19 @@ Camping.goes :HeiseRSS
 
 module HeiseRSS
 
+  # FEEDS = %w#
+  #   http://www.heise.de/security/news/news-atom.xml
+  #   http://www.heise.de/newsticker/heise-atom.xml
+  # #
+
   FEEDS = %w#
-    http://www.heise.de/security/news/news-atom.xml
-    http://www.heise.de/newsticker/heise-atom.xml
+    newsticker-atom.xml
+    security-atom.xml
   #
+
+  
+  RELEASE = 1
+  
 
   def r500(k,m,x)
     env = @env
@@ -55,6 +65,40 @@ module HeiseRSS::Controllers
   
   class Feed < R '/feed.atom'
     def get
+      
+      @entries = 
+      
+      # Over all FEEDs
+      HeiseRSS::FEEDS.map do |feed|
+        doc = REXML::Document.new(open(feed))
+        
+        # Create a Hash for every feed with "meldung_id => meldung_data_as_hash"
+        Hash[
+          *doc.elements.collect("/feed/entry") do |entry|
+            [ entry.elements['link'].attributes['href'][%r{/meldung/\d+}].to_sym, nil
+              # {
+              #   :title => entry.elements['title'].text,
+              #   :link => entry.elements['link'].attributes['href'],
+              #   :id => entry.elements['id'].text,
+              #   :updated => entry.elements['updated'].text,
+              #   :content => '<b>FOOBAR</b>'
+              # }
+            ]
+          end.flatten
+        ]
+      end
+      # This gives an Array of Hashes containing the entries
+      # Now lets eliminate the double entries
+      
+      
+      
+      
+      puts @entries.inspect
+      
+      @entries = nil
+      
+      @updated = Time.now.utc
+      
       render :_atom
     end
   end
@@ -78,57 +122,40 @@ module HeiseRSS::Views
   end
   
   def _atom
+    # @headers['Content-Type'] = 'application/atom+xml'
+    @headers['Content-Type'] = 'text/plain'
+    
+    
     atom = Builder::XmlMarkup.new(:indent => 2)
     atom.instruct!
     
     
-    atom.feed :xmlns => 'http://www.w3.org/2005/Atom' do
-      atom.title Stunts::TITLE
+    atom.fed :xmlns => 'http://www.w3.org/2005/Atom' do
+      atom.title "heise online News (++)"
+      
+      atom.link :href => "http://www.heise.de/"
+
+      atom.updated @updated.xmlschema
+      
       
       atom.author do
-        atom.name Stunts::AUTHOR
+        atom.name "heise online"
       end
-      atom.rights "Copyright #{Time.now.year} #{Stunts::AUTHOR}"
       
-      atom.link :rel => 'alternate', :type => 'text/html',
-        :href => Stunts::BASE_URL
+      atom.id "tag:pixelshed.net,2008-06-24:HeiseRSS/#{HeiseRSS::RELEASE}"
       
-      atom.link :rel => 'self', :type => 'application/atom+xml',
-        :href => "#{Stunts::BASE_URL}posts.atom"
+      atom.generator 'HeiseRSS', :version => HeiseRSS::RELEASE
       
-      atom.generator 'Stunts', :version => Stunts::RELEASE.gsub(%r{.+/}, '')
       
-      atom.id "#{Stunts::BASE_URL}posts.atom"
-      
-      atom.updated(
-        if not @posts.nil? and @posts.any?
-          @posts.first[:created_at].xmlschema
-        else
-          Time.now.utc.xmlschema
-        end
-      )
-      
-      (@posts or []).each do |post|
-        
-        content = if post[:text] =~ /^\s*<p>/m
-          post[:text]
-        else
-          flowztext(post[:text])
-        end
-        
-        unique_link = "#{Stunts::BASE_URL}#{post[:_id]}"
-        
-        
+      (@entries or []).each do |entry|
         atom.entry do
-          atom.id unique_link
-          atom.updated post[:created_at].xmlschema
+          atom.title entry[:title]
+          atom.link :href => entry[:link]
+          atom.id entry[:id]
+          atom.updated entry[:updated]
           
-          atom.link :rel => 'alternate', :type => 'text/html',
-            :href => unique_link
+          atom.content entry[:content], :type => 'html'
           
-          atom.title post[:title]
-          
-          atom.content content, :type => 'html'
         end
         
       end
