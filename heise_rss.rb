@@ -75,27 +75,32 @@ module HeiseRSS::Controllers
         # Create a Hash for every feed with "meldung_id => meldung_data_as_hash"
         Hash[
           *doc.elements.collect("/feed/entry") do |entry|
-            [ entry.elements['link'].attributes['href'][%r{/meldung/\d+}].to_sym, nil
-              # {
-              #   :title => entry.elements['title'].text,
-              #   :link => entry.elements['link'].attributes['href'],
-              #   :id => entry.elements['id'].text,
-              #   :updated => entry.elements['updated'].text,
-              #   :content => '<b>FOOBAR</b>'
-              # }
+            [ entry.elements['link'].attributes['href'][%r{/meldung/(\d+)}, 1].to_i,
+              {
+                :title => entry.elements['title'].text,
+                :link => entry.elements['link'].attributes['href'],
+                :id => entry.elements['id'].text,
+                :updated => entry.elements['updated'].text,
+                :content => '<b>FOOBAR</b>'
+              }
             ]
           end.flatten
         ]
-      end
+      end.
       # This gives an Array of Hashes containing the entries
       # Now lets eliminate the double entries
+      inject({}) do |accu, hsh|
+        accu.merge hsh
+      end.to_a.
+      # Now lets sort this stuff by meldungs id
+      # sort do |a, b|
+      #   a[0] <=> b[0]
+      # end.
+      # And now make a nice array for the view
+      map do |entry|
+        entry[1]
+      end
       
-      
-      
-      
-      puts @entries.inspect
-      
-      @entries = nil
       
       @updated = Time.now.utc
       
@@ -130,7 +135,7 @@ module HeiseRSS::Views
     atom.instruct!
     
     
-    atom.fed :xmlns => 'http://www.w3.org/2005/Atom' do
+    atom.feed :xmlns => 'http://www.w3.org/2005/Atom' do
       atom.title "heise online News (++)"
       
       atom.link :href => "http://www.heise.de/"
