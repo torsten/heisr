@@ -13,12 +13,15 @@ module HeiseRSS
   # #
 
   FEEDS = %w#
-    security-atom.xml
     newsticker-atom.xml
+    security-atom.xml
   #
 
   
   RELEASE = 1
+  
+  CACHE_FILE = 'heise_cache.marshald'
+  
   
 
   def r500(k,m,x)
@@ -66,6 +69,8 @@ module HeiseRSS::Controllers
   class Feed < R '/feed.atom'
     def get
       
+      cache = Marshal.load(File.read(CACHE_FILE)) rescue {}
+      
       @entries = 
       
       # Over all FEEDs
@@ -75,12 +80,15 @@ module HeiseRSS::Controllers
         # Create a Hash for every feed with "meldung_id => meldung_data_as_hash"
         Hash[
           *doc.elements.collect("/feed/entry") do |entry|
-            [ entry.elements['link'].attributes['href'][%r{/meldung/(\d+)}, 1].to_i,
+            link = entry.elements['link'].attributes['href']
+            
+            [ link[%r{/meldung/(\d+)}, 1].to_i,
               {
                 :title => entry.elements['title'].text,
-                :link => entry.elements['link'].attributes['href'],
+                :link => link,
                 :id => entry.elements['id'].text,
                 :updated => entry.elements['updated'].text,
+                :source => link[%r{http://www.heise.de/(.+?)/}, 1],
                 :content => '<b>FOOBAR</b>'
               }
             ]
@@ -93,15 +101,38 @@ module HeiseRSS::Controllers
         accu.merge hsh
       end.to_a.
       # Now lets sort this stuff by meldungs id
-      # sort do |a, b|
-      #   a[0] <=> b[0]
-      # end.
+      sort do |a, b|
+        a[0] <=> b[0]
+      end.
       # And now make a nice array for the view
       map do |entry|
-        puts entry[1][:link]
+        cache_key = "#{entry[0]}#{entry[1][:updated]}".to_sym
         
-        entry[1][:content] = open(entry[1][:link]).read
+        if not cache[cache_key]
+          puts "MISS: #{entry[1][:link]}"
+          cache[cache_key] = open(entry[1][:link]).read
+        end
+        
+        doc = Hpricot(cache[cache_key])
+        
+        
+        # Make relative images to absolute ones
+        (doc/"div[@class='meldung_wrapper'] > p img[@src^='/']").each do |img|
+          img['src'] = "http://www.heise.de#{img['src']}"
+        end
+        
+        # Remove ads
+        (doc/"div[@class='ISI_IGNORE']").remove
+
+        # Find all things in a meldung and make them to HTML
+        entry[1][:content] = (doc/"div[@class='meldung_wrapper'] > *").to_html
+        
         entry[1]
+      end
+      
+      
+      File.open(CACHE_FILE, 'wb') do |file|
+        file.write Marshal.dump(cache)
       end
       
       
@@ -138,7 +169,7 @@ module HeiseRSS::Views
     atom.instruct!
     
     
-    atom.fed :xmlns => 'http://www.w3.org/2005/Atom' do
+    atom.feed :xmlns => 'http://www.w3.org/2005/Atom' do
       atom.title "heise online News (++)"
       
       atom.link :href => "http://www.heise.de/"
@@ -157,7 +188,7 @@ module HeiseRSS::Views
       
       (@entries or []).each do |entry|
         atom.entry do
-          atom.title entry[:title]
+          atom.title("(#{entry[:source]}) #{entry[:title]}")
           atom.link :href => entry[:link]
           atom.id entry[:id]
           atom.updated entry[:updated]
