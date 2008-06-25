@@ -7,18 +7,18 @@ Camping.goes :HeiseRSS
 
 module HeiseRSS
 
-  # FEEDS = %w#
-  #   http://www.heise.de/security/news/news-atom.xml
-  #   http://www.heise.de/newsticker/heise-atom.xml
-  # #
-
   FEEDS = %w#
-    newsticker-atom.xml
-    security-atom.xml
+    http://www.heise.de/newsticker/heise-atom.xml
+    http://www.heise.de/security/news/news-atom.xml
   #
 
+  # FEEDS = %w#
+  #   newsticker-atom.xml
+  #   security-atom.xml
+  # #
+
   
-  RELEASE = 1
+  RELEASE = 2
   
   CACHE_FILE = 'heise_cache.marshald'
   
@@ -136,7 +136,7 @@ module HeiseRSS::Controllers
       end
       
       
-      @updated = Time.now.utc
+      @updated = Time.now.utc.xmlschema
       
       render :_atom
     end
@@ -161,8 +161,8 @@ module HeiseRSS::Views
   end
   
   def _atom
-    # @headers['Content-Type'] = 'application/atom+xml'
-    @headers['Content-Type'] = 'text/plain'
+    @headers['Content-Type'] = 'application/atom+xml'
+    # @headers['Content-Type'] = 'text/plain'
     
     
     atom = Builder::XmlMarkup.new(:indent => 2)
@@ -174,24 +174,26 @@ module HeiseRSS::Views
       
       atom.link :href => "http://www.heise.de/"
 
-      atom.updated @updated.xmlschema
+      atom.updated @updated
       
       
       atom.author do
         atom.name "heise online"
       end
       
-      atom.id "tag:pixelshed.net,2008-06-24:HeiseRSS/#{HeiseRSS::RELEASE}"
+      atom.id "tag:torsten.becker@gmail.com,2008-06:HeiseRSS++"
       
       atom.generator 'HeiseRSS', :version => HeiseRSS::RELEASE
       
       
       (@entries or []).each do |entry|
         atom.entry do
-          atom.title("(#{entry[:source]}) #{entry[:title]}")
+          # atom.title("#{entry[:source]}: #{entry[:title]}")
+          atom.title entry[:title]
           atom.link :href => entry[:link]
           atom.id entry[:id]
           atom.updated entry[:updated]
+          atom.category :term => entry[:source]
           
           atom.content entry[:content], :type => 'html'
           
