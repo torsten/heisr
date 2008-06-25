@@ -6,6 +6,8 @@ module Heisr
   
   FEEDS = %w#
     http://www.heise.de/newsticker/heise-atom.xml
+    http://www.heise.de/open/news/news-atom.xml
+    http://www.heise.de/mobil/newsticker/heise-atom.xml
     http://www.heise.de/security/news/news-atom.xml
   #
 
@@ -73,7 +75,7 @@ module Heisr
       end
       
       # Remove ads
-      (doc/"div[@class='ISI_IGNORE']").remove
+      (doc/"div[@class*='ISI_IGNORE']").remove
 
       # Find all things in a meldung and make them to HTML
       entry[1][:content] = (doc/"div[@class='meldung_wrapper'] > *").to_html
