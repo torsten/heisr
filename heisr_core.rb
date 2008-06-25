@@ -16,16 +16,16 @@ module Heisr
   
   RELEASE = 2
   
-  CACHE_FILE = 'heisr.cache'
+  CACHE_FILE = "#{File.expand_path(File.dirname(__FILE__))}/heisr.cache"
   
   
   def self.fetch_entries
-    cache = Marshal.load(File.read(CACHE_FILE)) rescue {}
+    cache = Marshal.load(File.read(Heisr::CACHE_FILE)) rescue {}
     current_ids = []
     
     entries = 
     # Over all FEEDs
-    HeiseRSS::FEEDS.map do |feed|
+    Heisr::FEEDS.map do |feed|
       doc = REXML::Document.new(open(feed))
       
       # Create a Hash for every feed with "meldung_id => meldung_data_as_hash"
@@ -60,7 +60,7 @@ module Heisr
       current_ids << entry[0]
       
       if not cache[cache_key]
-        puts "MISS: #{entry[1][:link]}"
+        $stderr.puts "MISS: #{entry[1][:link]}"
         cache[cache_key] = open(entry[1][:link]).read
       end
       
@@ -86,12 +86,9 @@ module Heisr
       not current_ids.include? key.to_s[/^\d+/].to_i
     end
     
-    File.open(CACHE_FILE, 'wb') do |file|
+    File.open(Heisr::CACHE_FILE, 'wb') do |file|
       file.write Marshal.dump(cache)
     end
-    
-    
-    @updated = Time.now.utc.xmlschema
     
     entries
   end
@@ -103,23 +100,23 @@ module Heisr
     
     
     atom.feed :xmlns => 'http://www.w3.org/2005/Atom' do
-      atom.title "heise online News (++)"
+      atom.title "heise combo News"
       
       atom.link :href => "http://www.heise.de/"
 
-      atom.updated @updated
+      atom.updated updated
       
       
       atom.author do
         atom.name "heise online"
       end
       
-      atom.id "tag:torsten.becker@gmail.com,2008-06:HeiseRSS++"
+      atom.id "tag:torsten.becker@gmail.com,2008-06:Heisr"
       
-      atom.generator 'HeiseRSS++', :version => HeiseRSS::RELEASE
+      atom.generator 'Heisr', :version => Heisr::RELEASE
       
       
-      (@entries or []).each do |entry|
+      (entries or []).each do |entry|
         atom.entry do
           # atom.title("#{entry[:source]}: #{entry[:title]}")
           atom.title entry[:title]
