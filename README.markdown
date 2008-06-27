@@ -1,6 +1,4 @@
-
-
-	Heisr
+# Heisr
 
 Heisr is an feed generator for www.heise.de, unfortunately heise does only
 provide feeds without atom:content so you would have to visit the website to
@@ -20,7 +18,8 @@ This will by the way mostly help people in germany which want to read heise
 online over RSS...
 
 
-	Dependencies
+# Dependencies
 
-* Hpricot 
-* Camping, if you want to run it as a local web app.
+* hpricot
+* builder
+* camping, if you want to run it as a local web app.
