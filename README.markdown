@@ -18,7 +18,7 @@ This will by the way mostly help people in germany which want to read heise
 online over RSS...
 
 
-# Dependencies
+## Dependencies
 
 * hpricot
 * builder
