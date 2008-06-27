@@ -64,7 +64,7 @@ module HeisrCamping::Views
     p do
       text "The "
       a "heise.de", :href => 'http://heise.de/'
-      text " RSS feeds combined and with real text in them. "
+      text " RSS feeds combined and with real content in them. "
       a "Check it out", :href => R(Feed)
       text '.'
     end

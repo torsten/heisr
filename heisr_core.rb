@@ -4,6 +4,8 @@ each{|_|require _}
 
 module Heisr
   
+  RELEASE = 3
+  
   FEEDS = %w#
     http://www.heise.de/newsticker/heise-atom.xml
     http://www.heise.de/open/news/news-atom.xml
@@ -15,8 +17,6 @@ module Heisr
   #   newsticker-atom.xml
   #   security-atom.xml
   # #
-  
-  RELEASE = 2
   
   CACHE_FILE = "#{File.expand_path(File.dirname(__FILE__))}/heisr.cache"
   
