@@ -20,6 +20,8 @@ online over RSS...
 
 ## Dependencies
 
+You might need the following gems:
+
 * hpricot
 * builder
 * camping, if you want to run it as a local web app.
