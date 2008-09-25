@@ -1,4 +1,4 @@
-%w.time rexml/document ubygems builder hpricot open-uri..
+%w.time rexml/document ubygems builder hpricot open-uri zlib..
 each{|_|require _}
 
 
@@ -18,11 +18,19 @@ module Heisr
   #   security-atom.xml
   # #
   
-  CACHE_FILE = "#{File.expand_path(File.dirname(__FILE__))}/heisr.cache"
+  CACHE_FILE = "#{File.expand_path(File.dirname(__FILE__))}/site_cache.gz"
   
   
   def self.fetch_entries
-    cache = Marshal.load(File.read(Heisr::CACHE_FILE)) rescue {}
+    cache = 
+    File.open(Heisr::CACHE_FILE) do |file|
+      gz = Zlib::GzipReader.new(file)
+      hsh = Marshal.load gz.read
+      gz.close
+      
+      hsh
+    end rescue {}
+    
     current_ids = []
     
     entries = 
@@ -89,7 +97,9 @@ module Heisr
     end
     
     File.open(Heisr::CACHE_FILE, 'wb') do |file|
-      file.write Marshal.dump(cache)
+      gz = Zlib::GzipWriter.new(file)
+      gz.write Marshal.dump(cache)
+      gz.close
     end
     
     entries
